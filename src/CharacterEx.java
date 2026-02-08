@@ -9,7 +9,7 @@ public class CharacterEx {
         FileReader fr=new FileReader("ram.txt");
         int c;
         while((c=fr.read())!=-1){
-            System.out.println((char)c);
+            System.out.print((char)c);
         }
     }
 }
