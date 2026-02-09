@@ -5,12 +5,14 @@ public class MultiThreading implements Runnable{
         Thread t2=new Thread(mt1);
         t1.setName("Thread 1");
         t1.setName("Thread 2");
+        t1.setPriority(Thread.MAX_PRIORITY);
+        t2.setPriority(Thread.MIN_PRIORITY);
         t1.start();
         t2.start();
     }
 
     @Override
     public void run() {
-        System.out.println(Thread.currentThread().getName()+" is running");
+        System.out.println(Thread.currentThread().getName()+" is running with priority "+Thread.currentThread().getPriority());
     }
 }
