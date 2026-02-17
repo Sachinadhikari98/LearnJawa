@@ -7,6 +7,8 @@ public class StringBufferExample {
         System.out.println(sb);
         sb.insert(10,'c');
         System.out.println(sb);
+        sb.delete(10,11);
+        System.out.println(sb);
         System.out.println(sb.reverse());
     }
 }
