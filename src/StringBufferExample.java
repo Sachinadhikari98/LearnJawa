@@ -6,6 +6,7 @@ public class StringBufferExample {
         sb.append("Language");
         System.out.println(sb);
         sb.insert(10,'c');
+        sb.insert(10,"Raju");
         System.out.println(sb);
         sb.delete(10,11);
         System.out.println(sb);
